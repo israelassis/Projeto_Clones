@@ -34,6 +34,20 @@ Projeto desenvolvido com base no vídeo [FORMS WITH HTML and CSS!](https://www.y
 
 ---
 
+## ⚠️ Principais Desafios Encontrados
+Durante o desenvolvimento do formulário, alguns pontos exigiram atenção especial e proporcionaram aprendizado prático:
+
+- 🎯 Alinhamento e espaçamento entre campos Garantir que os elementos do formulário ficassem visualmente equilibrados exigiu ajustes finos com margin, padding e gap, especialmente ao usar flexbox.
+
+- 🎨 Estilização de elementos nativos Personalizar select, checkbox e radio foi desafiador, já que esses elementos têm estilos padrão que variam entre navegadores. Foi necessário aplicar resets e técnicas específicas para manter a consistência visual.
+
+- 📱 Responsividade sem media queries complexas Adaptar o layout para telas menores usando apenas flex-wrap, width: 100% e max-width foi um exercício de criatividade para evitar sobrecarga de regras CSS.
+
+- 🧠 Separação entre estrutura e estilo Manter o HTML limpo e semântico enquanto o CSS cuidava da aparência exigiu disciplina e atenção à organização do código.
+
+- 🧩 Feedback visual para o usuário Criar estados de foco (:focus) e hover nos campos para melhorar a usabilidade foi essencial, mas exigiu testes para garantir que não interferissem na acessibilidade.
+
+---
 
 ## 🚀 Como executar
 
