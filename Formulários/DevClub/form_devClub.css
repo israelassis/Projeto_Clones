@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Exile&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* importando a fonte Poppins do Google Fonts */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    /* altura total da viewport */
+    display: flex;
+    justify-content: center;
+    /* centraliza horizontalmente */
+    align-items: center;
+    /* centraliza verticalmente */
+    background: url(/Gemini_Generated_Image_.png);
+    backdrop-filter: blur(5px);
+    /* efeito de desfoque no fundo */
+
+
+    /* garantir que a imagem de fundo cubra toda a área do body e fique ao centro */
+    background-size: cover;
+    /* cobre toda a área do body */
+    background-position: center;
+    /* centraliza a imagem de fundo */
+    background-repeat: no-repeat;
+    /* não repete a imagem de fundo */
+
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    /* fundo branco com transparência */
+    border-radius: 10px;
+    /* bordas arredondadas */
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    /* sombra ao redor do container */
+    backdrop-filter: blur(0.5px);
+    /* efeito de desfoque no fundo do container */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* borda branca com transparência */
+    min-width: 30%;
+    /* largura fixa do container */
+    padding: 30px 40px;
+    /* espaçamento interno do container */
+    color: rgba(12, 11, 15, 0.9);
+    text-align: center;
+    /* centraliza o texto dentro do container */
+}
+
+.container h1 {
+    font-size: 2.3em;
+    align-items: center;
+}
+
+.input-box {
+    position: relative;
+    /* posição relativa para o ícone dentro do input */
+    width: 100%;
+    /* ocupar o maximo de largura possível  - alem do padding*/
+    height: 20px;
+    margin: 30px 0;
+    /* espaçamento vertical entre os inputs */
+    /* espaçamento superior */
+}
+
+.input-box input {
+    width: 100%;
+    /* largura total do input */
+    height: 100%;
+    /* altura total do input */
+    background-color: transparent;
+    /* espaçamento interno do input (espaço para o ícone) */
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-bottom: 2px solid rgba(255, 255, 255);
+    /* borda inferior do input */
+    border-radius: 6px;
+    font-size: larger;
+    padding: 20px 45px 20px 15px;
+    /* espaçamento interno do input (espaço para o ícone) */
+    color: #fff;
+    /* cor do texto do input */
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    /* cor do placeholder do input */
+
+}
+
+/* estilo do ícone dentro do input */
+.input-box i {
+    position: absolute;
+    /* posição absoluta dentro do input */
+    right: 20px;
+    /* posiciona o ícone à direita do input */
+    top: 100%;
+    /* (geralmente top 50%) posiciona o ícone no meio verticalmente */
+    transform: translateY(-50%);
+    /* centraliza o ícone verticalmente */
+
+    color: rgba(255, 255, 255, 0.7);
+    /* cor do ícone */
+    font-size: 1.2em;
+}
+
+.remember-forgot {
+    display: flex;
+    /* usa flexbox para alinhar os itens */
+    justify-content: space-between;
+    /* espaça os itens igualmente */
+    font-size: 1em;
+    /* tamanho da fonte menor */
+    color: rgba(255, 255, 255, 0.7);
+    /* cor do texto */
+    margin: -5px 0 10px;
+    /* margin & padding 
+    1 valor - todos os lados
+    2 valores - vertical | horizontal
+    3 valores - superior | horizontal | inferior
+    4 valores - superior | direita | inferior | esquerda
+    */
+}
+
+.remember-forgot label input {
+    accent-color: #ff00c8;
+    margin: 15px 10px 0 0;
+    /* espaçamento superior */
+}
+
+.remember-forgot a {
+    margin: 15px 10px 0 0;
+    /* espaçamento superior */
+    color: rgba(255, 255, 255, 0.7);
+    /* cor do link */
+    text-decoration: none;
+    /* remove o sublinhado do link */
+    transition: 0.3s;
+    /* efeito de transição suave ao passar o mouse */
+}
+
+.remember-forgot a:hover {
+    color: rgba(255, 255, 255, 0.7);
+    /* cor do link */
+    text-decoration: underline;
+    /* remove o sublinhado do link */
+}
+
+.login {
+    width: 100%;
+    /* largura total do botão */
+    padding: 15px;
+    /* espaçamento interno do botão */
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 0, 200, 0.8);
+    /* cor de fundo do botão */
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.login:hover {
+    background: rgba(255, 0, 200, 1);
+    box-shadow: 0 0 20px rgba(255, 0, 200, 1);
+    color: #333;
+    transition: 0.5s;
+}
+
+.register-link {
+    margin-top: 20px;
+    /* espaçamento superior */
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.register-link a {
+    color: rgba(65, 59, 59, 0.7);
+    /* cor do link */
+    font-weight: 200;
+    text-decoration: none;
+    /* remove o sublinhado do link */
+    font-weight:800;
+    transition: 0.3s;
+    /* efeito de transição suave ao passar o mouse */
+}
+
+.register-link:hover {
+    color: rgba(228, 221, 221, 0.7);
+    transition: 0.3s;
+    font-size: 1.1em;
+}
+.register-link a:hover {
+    text-decoration: underline;
+    font-style: italic;
+    transition: 0.3s;
+    color: #fff;
+
+}
