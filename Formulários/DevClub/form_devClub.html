@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> <!-- link para os ícones do Boxicons (pessoinha e cadeado na label) -->
+    <title>Formulário - Login / DevClub</title>
+
+</head>
+
+
+<body>
+    <main class="container">
+        <h1>Formulário de Login - DevClub</h1>
+        <div class="input-box">
+            <input type="email" name="email" id="email" class="input-user" placeholder="E-mail do usuário:" required>
+            <i class="bx bxs-user"></i>
+        </div> <!-- type email para validar o formato do email digitado -->
+        <div class="input-box">
+            <input type="password" name="senha" id="senha" class="input-user" placeholder="Senha do usuário:" required>
+            <!-- type password para esconder a senha digitada -->
+            <i class="bx bxs-lock-alt"></i> <!-- ícone de cadeado -->
+        </div>
+
+        <div class="remember-forgot">
+            <label for="lembrar">
+                <input type="checkbox" name="lembrar" id="lembrar">
+                Lembrar-me
+            </label>
+            <a href="">Esqueci minha senha</a> <!-- link para recuperação de senha -->
+
+        </div>
+
+        <button type="submit">Login</button>
+
+        <div class="register-link">
+            <p>Não tem uma conta? Cadastre-se <a href="">AQUI</a></p>
+        </div>
+
+        </form>
+
+
+    </main>
+
+</body>
+
+</html>
