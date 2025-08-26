@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*  aplica a todos os elementos da página */
+
+#titulo{
+    font-family: sans-serif;
+    color: #380061;
+    text-align: justify;
+} 
+
+#subtitulo{
+    font-family: sans-serif;
+    text-align: center;
+    color: #380061;
+    margin-top: 2%;
+} 
+
+legend{
+    font-family: sans-serif;
+    font-size: 20px;
+    
+} 
+ 
+fieldset{
+    border: 0;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    max-width: 600px; /*  define a largura máxima do fieldset */
+    min-width: 50%; /*  define a largura mínima do fieldset */
+    font-family: sans-serif;
+    background-color: #dfd6e0;
+} 
+
+body{
+    font-weight: bold;
+    background-color: #f3eafa;
+    font-family: sans-serif; 
+    color: #594229dd;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+ /*  estiliza os campos de entrada */
+input, select, textarea, button{
+    width: 95%; /*  define a largura */
+    padding: 10px; /*  espaçamento interno  */
+    margin-top: 6px; /*  define a margem superior */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 16px; /*  define o tamanho da fonte */
+}
+
+.campo{
+    margin-bottom: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.campo label{
+    display: block; /*  faz com que o rótulo ocupe toda a largura disponível */
+    margin-bottom: 0.5em; /*  define a margem inferior */
+    font-weight: bold; /*  deixa o texto em negrito */
+    color: #380061;
+}
+
+fieldset.grupo .campo{
+    float: left; /*  alinha os fieldsets lado a lado */
+    
+    margin-right: 1em; /*  define a margem direita */
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select, .campo textarea{
+    border: 1px solid #594229dd;
+    padding: 0.2em; /*  espaçamento interno */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /*  adiciona uma sombra */
+    display: block; /*  faz com que o campo ocupe toda a largura disponível */
+    width: 100%; /*  define a largura */
+}
+
+.campo select option{
+    padding-right: 1em; /*  espaçamento interno à direita */
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    border-color: #380061; /*  muda a cor da borda quando o campo está em foco */
+    box-shadow: 0 0 5px rgba(56, 0, 97, 0.5); /*  adiciona uma sombra quando o campo está em foco */
+    outline: none; /*  remove o contorno padrão */
+}
+
+.botão{
+    font-size: 1.2em;
+    background-color: #380061;
+    color: #ffffff;
+    border: 0;
+    padding: 0.2em 1em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    width: auto; /*  ajusta a largura ao conteúdo */
+    
+
+}
+
+.botão:hover{
+    background: #ccbbff;
+        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer; /*  muda o cursor quando o mouse está sobre o botão */
+    text-shadow: none;
+}
+
+.checkbox{
+    display: inline-block; /*  faz com que os elementos fiquem lado a lado */
+}
+
+footer{
+    text-align: center; /*  centraliza o texto */
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: #380061;
+}
